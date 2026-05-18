@@ -1,0 +1,263 @@
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Amelia</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background: #fff7fb;
+            color:#444;
+        }
+
+        header{
+            background: linear-gradient(to right, #ffd6e7, #ffe8f3);
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        header h1{
+            color:#ff5c8a;
+            font-size:28px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:20px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:#555;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#ff5c8a;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        .hero{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:50px;
+            flex-wrap:wrap;
+        }
+
+        .profile-img{
+            width:250px;
+            height:250px;
+            border-radius:50%;
+            background:#ffd6e7;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            overflow:hidden;
+            border:8px solid white;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-img img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .biodata{
+            max-width:500px;
+        }
+
+        .biodata h2{
+            color:#ff5c8a;
+            margin-bottom:15px;
+            font-size:35px;
+        }
+
+        .biodata p{
+            margin-bottom:10px;
+            line-height:1.7;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:40px;
+            color:#ff5c8a;
+            font-size:32px;
+        }
+
+        .hobi ul{
+            list-style:square;
+            padding-left:20px;
+            line-height:2;
+            font-size:18px;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:250px;
+            object-fit:contain;
+            border-radius:20px;
+            transition:0.3s;
+            box-shadow:0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery img:hover{
+            transform:scale(1.03);
+        }
+
+        .kontak p{
+            margin-bottom:15px;
+            font-size:18px;
+        }
+
+        footer{
+            background:#ffd6e7;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            color:#555;
+            font-weight:600;
+        }
+
+        @media(max-width:768px){
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            nav ul{
+                gap:10px;
+                font-size:14px;
+            }
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>My Cute Website ♡</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="tentang">
+        <div class="hero">
+
+            <div class="profile-img">
+                
+                <img src="foto_aku .jpg/WhatsApp Image 2026-05-18 at 14.04.34.jpeg" alt="Foto Amelia">
+            </div>
+
+            <div class="biodata card">
+                <h2>AMELIA LATOLANDO</h2>
+
+                <p><b>NIM :</b> 202512063</p>
+
+                <p><b>Program Studi :</b> Komputerisasi Akuntansi</p>
+
+                <p>
+                    Haiii ♡ Aku Amelia, mahasiswi Komputerisasi Akuntansi
+                    yang suka belajar hal baru, suka desain lucu, dan
+                    senang membuat tampilan website yang aesthetic dan menarik.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="hobi">
+        <h2 class="section-title">Hobi & Keahlian ✨</h2>
+
+        <div class="card">
+            <ul>
+                <li>🛍️ Belanja</li>
+                <li>✈️ Jalan - jalan</li>
+                <li>🍳 Memasak</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section id="galeri">
+        <h2 class="section-title">Galeri 📸</h2>
+
+        <div class="gallery">
+
+            
+            <img src="foto_aku .jpg/WhatsApp Image 2026-05-18 at 14.04.36.jpeg" alt="Galeri 1">
+
+            <img src="foto_aku .jpg/WhatsApp Image 2026-05-18 at 14.04.35.jpeg" alt="Galeri 2">
+
+            <img src="c:\Users\hp\Downloads\WhatsApp Image 2026-05-18 at 14.04.34.jpeg" alt="Galeri 3">
+
+        </div>
+    </section>
+
+    
+    <section id="kontak">
+        <h2 class="section-title">Kontak 💌</h2>
+
+        <div class="kontak card">
+            <p><b>Instagram :</b> @amelialatolando</p>
+
+            <p><b>WhatsApp :</b> 085823539769</p>
+
+            <p><b>Email :</b> amellatolando@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Website dibuat oleh Amelia Latolando senin 18 mei 2026</p>
+    </footer>
+
+</body>
+</html>
